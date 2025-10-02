@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-family:sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #ff7733;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-btn.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.nav-btn:not(.active) {
+    background-color: #fff;
+    color: #000;
+}
+
+.page {
+    display: none;
+    padding: 40px;
+    min-height: calc(100vh - 88px);
+}
+
+.page.active {
+    display: block;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.image-card {
+    text-align: center;
+}
+
+.image-box {
+    background-color: #ff7733;
+    border-radius: 20px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.image-description {
+    color: #fff;
+    font-size: 18px;
+}
+
+.toggle-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.play-button {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 100px solid #ff7733;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+
+.play-text {
+    position: absolute;
+    left: -80px;
+    top: -10px;
+    font-size: 18px;
+    color: #000;
+}
+
+.toggle-message {
+    font-size: 24px;
+    display: none;
+}
+
+.toggle-message.show {
+    display: block;
+}
+
+.toggle-note {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Glazing MIST Page */
+.glazing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.mist-logo {
+    font-size: 120px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.glazing-text {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.about-button {
+    background-color: #ff7733;
+    color: #000;
+    border: none;
+    padding: 20px 60px;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
